@@ -181,10 +181,10 @@ footer .footer__content a {
   color: black;
   opacity: 50%;
 }
-.contact .button {
+.contact .contact__button {
   background-color: #411c1c;
   padding: 20px 20px;
-  border-radius: 0;
+  border-radius: 5px;
   letter-spacing: 1.6px;
   text-decoration: none;
   color: white;
