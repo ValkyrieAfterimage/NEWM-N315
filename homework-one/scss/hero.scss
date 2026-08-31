@@ -1,0 +1,25 @@
+.hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  p {
+    font-size: 50px;
+    color: white;
+  }
+}
+
+.hero__home {
+  background-image:
+    linear-gradient(rgba(21, 16, 16, 0.703)), url("../images/home_hero.jpg");
+}
+
+.hero__about {
+  background-image:
+    linear-gradient(rgba(21, 16, 16, 0.703)), url("../images/fish_hero.jpg");
+}

@@ -1,0 +1,36 @@
+.menu {
+  background-color: #eee6c1;
+  padding: 50px;
+
+  .item {
+    width: 100%;
+    border-radius: 10px;
+
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #d7c9a6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .item__image {
+      width: 150px;
+      height: 150px;
+      border-radius: 5px;
+      outline: solid #411c1c 3px;
+    }
+
+    .item__text {
+      //   background-color: red;
+      width: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        font-size: 40px;
+      }
+    }
+  }
+}

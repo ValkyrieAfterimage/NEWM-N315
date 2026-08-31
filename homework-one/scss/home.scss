@@ -1,0 +1,21 @@
+.home {
+  background-color: #eee6c1;
+  min-height: 400px;
+
+  .quote {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+
+    .quote__image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .quote__text {
+      font-size: 40px;
+    }
+  }
+}
