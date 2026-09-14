@@ -1,0 +1,66 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+
+  .hero {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    p {
+      font-size: 50px;
+      color: rgb(255, 255, 255);
+    }
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.758)),
+      url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQqZd0XV1MmhFcdiXmxQOEIfSCbOaN7qXBWZ4jRPgnXA&s=10);
+  }
+
+  a:hover {
+    p {
+      color: white;
+    }
+  }
+
+  .preview {
+    height: 200px;
+    outline: 2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    p {
+      font-size: 30px;
+      color: rgb(148, 148, 148);
+    }
+
+    &--politics {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.758)),
+        url(https://upload.wikimedia.org/wikipedia/commons/9/98/Lady_Gaga_at_the_White_House_in_2023_%281%29.jpg?utm_source=gpe.wikipedia.org&utm_campaign=index&utm_content=original);
+    }
+
+    &--film {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.758)),
+        url(https://ih1.redbubble.net/image.4766194325.3114/flat,750x,075,f-pad,750x1000,f8f8f8.u1.webp);
+    }
+
+    &--cooking {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.758)),
+        url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6O-med15qwpGaM4kFZCytfI1emBffWzM0nLFUNmxltA&s=10);
+    }
+  }
+}

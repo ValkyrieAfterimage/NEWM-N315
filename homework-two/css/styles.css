@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.thin {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav {
+  height: 50px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  height: 50px;
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer__content {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: gray;
+}
+.card__image {
+  width: 100%;
+}
+.card__title {
+  font-size: 24px;
+}
+.card____text {
+  font-size: 16px;
+}
+.card__button {
+  padding: 10px 20px;
+}
+.card__button--primary {
+  background-color: blue;
+  color: white;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.home .hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home .hero p {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+.home .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.758)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQqZd0XV1MmhFcdiXmxQOEIfSCbOaN7qXBWZ4jRPgnXA&s=10);
+}
+.home a:hover p {
+  color: white;
+}
+.home .preview {
+  height: 200px;
+  outline: 2px solid black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home .preview p {
+  font-size: 30px;
+  color: rgb(148, 148, 148);
+}
+.home .preview--politics {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.758)), url(https://upload.wikimedia.org/wikipedia/commons/9/98/Lady_Gaga_at_the_White_House_in_2023_%281%29.jpg?utm_source=gpe.wikipedia.org&utm_campaign=index&utm_content=original);
+}
+.home .preview--film {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.758)), url(https://ih1.redbubble.net/image.4766194325.3114/flat,750x,075,f-pad,750x1000,f8f8f8.u1.webp);
+}
+.home .preview--cooking {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.758)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6O-med15qwpGaM4kFZCytfI1emBffWzM0nLFUNmxltA&s=10);
+}
+
+.section {
+  padding: 30px 0;
+}
+.section .article {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  outline: 2px solid black;
+}
+.section .article__image {
+  width: 200px;
+  height: 100%;
+}
+.politics .article {
+  background-color: rgb(244, 217, 217);
+}
+
+.film .article {
+  background-color: rgb(224, 244, 217);
+}
+
+.cooking .article {
+  background-color: rgb(244, 241, 217);
+}

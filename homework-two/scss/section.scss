@@ -1,0 +1,35 @@
+.section {
+  padding: 30px 0;
+  .article {
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    outline: 2px solid black;
+
+    &__image {
+      width: 200px;
+      height: 100%;
+    }
+
+    &__text {
+    }
+
+    &__title {
+    }
+  }
+}
+
+.politics .article {
+  background-color: rgb(244, 217, 217);
+}
+
+.film .article {
+  background-color: rgb(224, 244, 217);
+}
+
+.cooking .article {
+  background-color: rgb(244, 241, 217);
+}
