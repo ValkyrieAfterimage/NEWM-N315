@@ -1,0 +1,21 @@
+.locations {
+  background-color: #35211e;
+  padding: 50px;
+  color: white;
+
+  .location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    .location__text {
+      * {
+        margin-bottom: 20px;
+      }
+    }
+    img {
+      width: 500px;
+    }
+  }
+}

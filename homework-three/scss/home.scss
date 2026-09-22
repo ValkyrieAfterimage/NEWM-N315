@@ -1,0 +1,36 @@
+.hero {
+  height: 400px;
+  background-image:
+    linear-gradient(rgba(21, 16, 16, 0.703)), url("../images/hero.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  h1 {
+    color: white;
+  }
+}
+
+.home {
+  background-color: #e4d48a;
+  min-height: 500px;
+
+  .quote {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+
+    .quote__image {
+      width: 200px;
+      border: ridge 20px #54342c;
+    }
+    .quote__text {
+    }
+  }
+}

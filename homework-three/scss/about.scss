@@ -1,0 +1,19 @@
+.about {
+  background-color: #35211e;
+  padding: 50px;
+  min-height: 800px;
+
+  color: white;
+  h1 {
+    color: #e4d48a;
+  }
+
+  * {
+    margin: 0 0 20px;
+  }
+
+  .red {
+    color: rgb(255, 111, 111);
+    font-weight: bold;
+  }
+}
