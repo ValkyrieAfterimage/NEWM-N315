@@ -1,0 +1,289 @@
+.contact {
+  .hero {
+    padding-top: 65px;
+    min-height: 288px;
+    background:
+      linear-gradient(
+        0deg,
+        rgba(13, 24, 16, 0.95) 0%,
+        rgba(13, 24, 16, 0.5) 50%,
+        rgba(13, 24, 16, 0.2) 100%
+      ),
+      url("../assets/mountain-trail.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 0 40px 40px;
+      width: $site-width;
+
+      h2,
+      h1 {
+        margin: 0px;
+      }
+      h1 {
+        color: $white;
+      }
+    }
+  }
+
+  .form {
+    background-color: $white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .form__container {
+      width: $site-width;
+      padding: 64px 40px;
+
+      display: flex;
+      justify-content: space-between;
+      gap: 48px;
+
+      flex-wrap: wrap;
+    }
+
+    .form__desc {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 27.63px;
+      max-width: 574px;
+      color: #555555;
+    }
+
+    form {
+      max-width: 890px;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      h1 {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0;
+      }
+      p {
+        color: #666666;
+      }
+      label {
+        margin-bottom: -16px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        .orange {
+          color: $orange;
+        }
+      }
+      input,
+      button,
+      textarea {
+        border-radius: 14px;
+      }
+      input,
+      textarea {
+        padding: 15px;
+        border: 1px solid #e7e5e4;
+      }
+      textarea {
+        resize: none;
+        font-family: DM Sans;
+        font-weight: 400;
+        font-size: 14px;
+        height: 146px;
+      }
+      input:focus,
+      textarea:focus {
+        outline: 1px solid $orange;
+      }
+      button {
+        background-color: $green;
+        color: $white;
+        padding: 17px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #235a43;
+      }
+      button:focus {
+        background-color: #2e7557;
+      }
+
+      .required {
+        font-size: 12px;
+      }
+
+      .form__name-email {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+
+        div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+      }
+    }
+
+    .form__info {
+      width: 100%;
+      max-width: 420px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      h1 {
+        margin: 32px 0 0;
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      .form__info__data {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        p {
+          font-size: 14px;
+          opacity: 60%;
+        }
+      }
+
+      .form__info__hours__container {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-size: 14px;
+        }
+        .form__info__hours__day {
+          opacity: 60%;
+        }
+        .form__info__hours__time {
+          font-weight: 600;
+        }
+      }
+
+      .form__info__hours__open-now {
+        display: flex;
+        gap: 8px;
+
+        .big-dot {
+          margin-top: 5px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #009966;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 600px;
+          color: #009966;
+        }
+      }
+
+      .form__info__map {
+        margin-top: 32px;
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.8)),
+          url("../assets/boulder-co.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 174px;
+        width: 100%;
+        border-radius: 16px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 26px;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 12px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 10px;
+          color: #888888;
+        }
+      }
+
+      .form__info__links {
+        display: flex;
+        gap: 20px;
+        font-weight: 600;
+
+        a {
+          color: $white;
+          text-decoration: none;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .faqs {
+    background-color: $off-white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .faqs__container {
+      width: 100%;
+      max-width: $site-width;
+      padding: 64px 40px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .faqs__faqs {
+      width: 100%;
+      max-width: 768px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .faqs__faqs__faq {
+        background-color: $white;
+        padding: 16px 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-radius: 14px;
+        box-shadow: 0px 1px 2px -1px #0000001a;
+        box-shadow: 0px 1px 3px 0px #0000001a;
+
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.toast {
+  background-color: $off-white;
+  border-radius: 8px;
+  padding: 16px 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $black !important;
+  }
+}
+
+.error {
+  border-left: 3px solid $orange;
+}
+
+.success {
+  border-left: 3px solid $green;
+}

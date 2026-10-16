@@ -1,0 +1,655 @@
+.home {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(11, 22, 16, 0.92) 0%,
+        rgba(11, 22, 16, 0.65) 50%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("../assets/hero.jpg");
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .hero__content {
+      width: $site-width;
+      margin: 0 24px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+
+      .hero__content__est {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 3.6px;
+      }
+
+      .hero__content__tagline {
+        font-size: 88px;
+        font-weight: 900;
+        color: $white;
+        letter-spacing: -2.2px;
+        line-height: 80.96px;
+        margin: 0;
+        .trail {
+          color: $orange;
+        }
+      }
+
+      .hero__content__blurb {
+        max-width: 480px;
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;
+        opacity: 75%;
+        line-height: 29.25px;
+      }
+
+      .hero__content__buttons {
+        display: flex;
+        gap: 16px;
+        a {
+          font-size: 14px;
+          font-weight: 700px;
+          letter-spacing: 0.35px;
+          text-decoration: none;
+          color: $white;
+          border-radius: 10px;
+          padding: 14px 28px;
+        }
+
+        .hero__content__buttons__shop {
+          background-color: $orange;
+        }
+        .hero__content__buttons__adventures {
+          border: 2px solid $white;
+        }
+      }
+    }
+
+    .hero__scroll {
+      position: absolute;
+      bottom: 32px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+
+      text-decoration: none;
+
+      p {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 2.5px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $white;
+        opacity: 30%;
+      }
+
+      .hero__scroll__line {
+        width: 1px;
+        height: 40px;
+        background: linear-gradient(#ffffff4d, #00000000);
+      }
+    }
+  }
+
+  .numbers {
+    min-height: 91px;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .numbers__box {
+      width: 340px;
+      height: 51px;
+      margin: 16px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      border-right: solid 1px #ffffff26;
+
+      h2 {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        color: $white;
+        opacity: 50%;
+        text-transform: uppercase;
+      }
+    }
+
+    .numbers__box:last-child {
+      border-right: none;
+    }
+  }
+
+  .categories {
+    min-height: 588px;
+    background-color: $off-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .categories__container {
+      width: $site-width;
+      margin: 32px 16px;
+    }
+
+    h2 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3.6px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .categories__title-bar {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      margin-bottom: 40px;
+
+      h1 {
+        font-size: 40px;
+        font-weight: 900;
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        color: $black;
+        white-space: nowrap;
+      }
+    }
+
+    .categories__cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      .categories__card {
+        aspect-ratio: 3/4;
+        width: 100%;
+        max-width: 180px;
+        border-radius: 16px;
+        background-color: green;
+
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.35px;
+        text-decoration: none;
+        color: $white;
+
+        padding: 16px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+
+      .camping {
+        background:
+          linear-gradient(
+            0deg,
+            rgba(13, 24, 16, 0.85) 0%,
+            rgba(13, 24, 16, 0.2) 50%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url("../assets/camping.jpg");
+        background-size: cover;
+      }
+
+      .hiking {
+        background:
+          linear-gradient(
+            0deg,
+            rgba(13, 24, 16, 0.85) 0%,
+            rgba(13, 24, 16, 0.2) 50%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url("../assets/hiking.jpg");
+        background-size: cover;
+      }
+
+      .fishing {
+        background:
+          linear-gradient(
+            0deg,
+            rgba(13, 24, 16, 0.85) 0%,
+            rgba(13, 24, 16, 0.2) 50%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url("../assets/fishing.jpg");
+        background-size: cover;
+      }
+
+      .kayaking {
+        background:
+          linear-gradient(
+            0deg,
+            rgba(13, 24, 16, 0.85) 0%,
+            rgba(13, 24, 16, 0.2) 50%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url("../assets/kayaking.jpg");
+        background-size: cover;
+      }
+
+      .climbing {
+        background:
+          linear-gradient(
+            0deg,
+            rgba(13, 24, 16, 0.85) 0%,
+            rgba(13, 24, 16, 0.2) 50%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url("../assets/climbing.jpg");
+        background-size: cover;
+      }
+
+      .apparel {
+        background:
+          linear-gradient(
+            0deg,
+            rgba(13, 24, 16, 0.85) 0%,
+            rgba(13, 24, 16, 0.2) 50%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url("../assets/apparel.jpg");
+        background-size: cover;
+      }
+    }
+  }
+
+  .featured {
+    // min-height: 1326px;
+    padding: 96px 0;
+    margin: 0 40px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .featured__container {
+      max-width: $site-width;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .featured__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 32px;
+
+        .featured__card {
+          width: 100%;
+          max-width: 432px;
+          height: 454px;
+          background-color: $off-white;
+          border-radius: 16px;
+          overflow: hidden;
+
+          .featured__card__img {
+            width: 100%;
+            height: 324px;
+          }
+
+          .featured__card__text {
+            padding: 20px;
+
+            h1 {
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 27px;
+              letter-spacing: 0px;
+              text-align: left;
+              margin: 0;
+            }
+
+            .featured__card__info {
+              margin-top: 16px;
+              display: flex;
+              justify-content: space-between;
+
+              p {
+                font-weight: 900;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0px;
+              }
+              h2 {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0px;
+              }
+            }
+          }
+
+          .backpack {
+            background-image: url("../assets/backpack.jpg");
+            background-size: cover;
+          }
+          .tent {
+            background-image: url("../assets/tent.jpg");
+            background-size: cover;
+          }
+          .jacket {
+            background-image: url("../assets/jacket.jpg");
+            background-size: cover;
+          }
+          .paddle {
+            background-image: url("../assets/paddle.jpg");
+            background-size: cover;
+          }
+          .boots {
+            background-image: url("../assets/boots.jpg");
+            background-size: cover;
+          }
+          .rod {
+            background-image: url("../assets/rod.jpg");
+            background-size: cover;
+          }
+        }
+      }
+
+      .featured__button {
+        font-size: 14px;
+        font-weight: 700px;
+        letter-spacing: 0.35px;
+        text-decoration: none;
+        color: $black;
+        border-radius: 10px;
+
+        margin-top: 48px;
+        padding: 14px 28px;
+
+        border: 2px solid $black;
+      }
+    }
+  }
+
+  .inspiration {
+    min-height: 897px;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .inspiration__container {
+      width: $site-width;
+      margin: 32px 16px;
+    }
+
+    .inspiration__title-bar {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      margin-bottom: 40px;
+
+      h1 {
+        font-weight: 900;
+        font-size: 40px;
+        color: $white;
+        margin: 0;
+      }
+      a {
+        color: $white;
+        opacity: 50%;
+        white-space: nowrap;
+      }
+    }
+
+    .inspiration__cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      .inspiration__card {
+        aspect-ratio: 3/4;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 16px;
+
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.35px;
+        text-decoration: none;
+        color: $white;
+
+        padding: 16px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        background-size: cover;
+
+        h1 {
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 24.75px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22.75px;
+          color: $white;
+          opacity: 55%;
+          margin-top: 8px;
+        }
+        h2 {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 20px;
+          margin-top: 16px;
+        }
+      }
+
+      .rocky {
+        background-image:
+          linear-gradient(
+            0deg,
+            rgba(13, 24, 16, 0.85) 0%,
+            rgba(13, 24, 16, 0.2) 50%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url("../assets/rocky.jpg");
+      }
+      .whitewater {
+        background-image:
+          linear-gradient(
+            0deg,
+            rgba(13, 24, 16, 0.85) 0%,
+            rgba(13, 24, 16, 0.2) 50%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url("../assets/water.jpg");
+      }
+      .colorado {
+        background-image:
+          linear-gradient(
+            0deg,
+            rgba(13, 24, 16, 0.85) 0%,
+            rgba(13, 24, 16, 0.2) 50%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url("../assets/color.jpg");
+      }
+    }
+  }
+
+  .testimonials {
+    // min-height: 582px;
+    padding: 96px 40px;
+    background-color: $off-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .testimonials__container {
+      max-width: $site-width;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .testimonials__cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 32px;
+
+        .testimonials__card {
+          width: 100%;
+          max-width: 432px;
+          min-height: 260px;
+          background-color: $white;
+
+          box-shadow: 0px 1px 2px -1px #0000001a;
+          box-shadow: 0px 1px 3px 0px #0000001a;
+
+          border-radius: 16px;
+          overflow: hidden;
+
+          .testimonials__card__container {
+            padding: 32px;
+          }
+
+          .testimonials__card__rating {
+            img {
+              width: 15px;
+            }
+          }
+
+          p {
+            font-weight: 400;
+            font-style: Italic;
+            font-size: 15px;
+            line-height: 24.38px;
+            color: #444444;
+            padding-top: 20px;
+          }
+
+          .testimonials__card__credit {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-top: 24px;
+
+            img {
+              width: 40px;
+              border-radius: 20px;
+            }
+            h4 {
+              font-weight: 900;
+              font-size: 14px;
+              line-height: 20px;
+            }
+            p {
+              font-weight: 400;
+              font-style: normal;
+              font-size: 12px;
+              line-height: 16px;
+              padding: 0;
+              color: #888888;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .subscribe {
+    max-height: 372px;
+    padding: 80px 40px;
+    background-color: $green;
+    display: flex;
+    justify-content: space-evenly;
+
+    .subscribe__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+
+      width: 100%;
+      max-width: 576px;
+    }
+
+    h2 {
+      margin: 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      color: $white;
+      text-align: center;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22.75px;
+      text-align: center;
+      color: $white;
+      opacity: 55%;
+    }
+
+    .subscribe__buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 8px;
+
+      input {
+        width: 100%;
+        max-width: 266px;
+        border-radius: 10px;
+        padding: 13px 16px;
+        background: #ffffff1a;
+        border: 1px solid #ffffff33;
+
+        font-family: DM Sans;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff59;
+      }
+
+      a {
+        border-radius: 10px;
+        padding: 13px 20px;
+        font-weight: 700;
+        font-size: 14px;
+        background-color: $orange;
+        color: $white;
+      }
+    }
+  }
+}

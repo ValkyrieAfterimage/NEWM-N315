@@ -1,0 +1,305 @@
+.guides {
+  .hero {
+    padding-top: 65px;
+    min-height: 288px;
+    background:
+      linear-gradient(
+        0deg,
+        rgba(13, 24, 16, 0.95) 0%,
+        rgba(13, 24, 16, 0.5) 50%,
+        rgba(13, 24, 16, 0.2) 100%
+      ),
+      url("../assets/about-hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 0 40px 40px;
+      width: $site-width;
+
+      h2,
+      h1 {
+        margin: 0px;
+      }
+      h1 {
+        color: $white;
+      }
+    }
+  }
+
+  .learn {
+    background-color: $white;
+    padding: 64px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .learn__container {
+      width: $site-width;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 48px;
+      padding: 0 40px;
+    }
+
+    .learn__text {
+      max-width: 656px;
+
+      h1 {
+        font-size: 30px;
+        margin: 0;
+        line-height: 37.5px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27.63px;
+      }
+    }
+
+    .learn__numbers {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      .learn__number {
+        h2 {
+          font-size: 36px;
+          font-weight: 900;
+          line-height: 40px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 1.2px;
+          color: #888888;
+          text-transform: uppercase;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .articles {
+    background-color: $off-white;
+    // min-height: 1078px;
+    padding: 64px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .articles__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: $site-width;
+      padding: 0 40px;
+      gap: 32px;
+
+      .articles__card {
+        width: 100%;
+        max-width: 432px;
+        min-height: 459px;
+        background-color: $white;
+        border-radius: 16px;
+        overflow: hidden;
+
+        box-shadow: 0px 1px 2px -1px #0000001a;
+        box-shadow: 0px 1px 3px 0px #0000001a;
+
+        .articles__card__img {
+          width: 100%;
+          height: 243px;
+
+          .tag {
+            position: relative;
+            left: 12px;
+            top: 12px;
+
+            width: fit-content;
+            font-weight: 900;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: 0.25px;
+            color: $white;
+
+            padding: 4px 10px;
+            background-color: $green;
+            border-radius: 20px;
+          }
+        }
+
+        .articles__card__text {
+          padding: 24px;
+
+          .credits {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 15px;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              color: #999999;
+              margin-bottom: 8px;
+            }
+          }
+
+          h1 {
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 24.75px;
+            margin-bottom: 12px;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22.75px;
+            color: #666666;
+            margin-bottom: 19px;
+          }
+
+          h2 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-transform: none;
+          }
+        }
+
+        .camping {
+          background-image: url("../assets/beginner-camping-checklist.jpg");
+          background-size: cover;
+        }
+        .hiking {
+          background-image: url("../assets/indiana-hiking-trails.jpg");
+          background-size: cover;
+        }
+        .backpack {
+          background-image: url("../assets/choosing-backpack.jpg");
+          background-size: cover;
+        }
+        .cooking {
+          background-image: url("../assets/campfire-cooking-basics.jpg");
+          background-size: cover;
+        }
+        .kayaking {
+          background-image: url("../assets/kayaking-safety.jpg");
+          background-size: cover;
+        }
+        .principles {
+          background-image: url("../assets/trace-principles.jpg");
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .video {
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .video__container {
+      width: $site-width;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 56px;
+
+      padding: 96px 40px;
+    }
+
+    .video__text {
+      width: 100%;
+      max-width: 652px;
+      color: $white;
+
+      h2 {
+        color: $orange;
+      }
+      h1 {
+        margin-bottom: 16px;
+      }
+      p {
+        opacity: 55%;
+        line-height: 26px;
+      }
+      .video__text__info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 32px 0;
+        p {
+          opacity: 35%;
+        }
+      }
+      a {
+        width: fit-content;
+        padding: 14px 28px;
+        border-radius: 10px;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: $orange;
+        p {
+          color: $white;
+          opacity: 100%;
+        }
+      }
+    }
+
+    .video__thumbnail {
+      width: 100%;
+      max-width: 652px;
+      aspect-ratio: 1.777;
+      //   height: 100%;
+      //   max-height: 336px;
+      background:
+        linear-gradient(rgba(28, 25, 23, 0.4)),
+        url("../assets/beginner-camping-checklist.jpg");
+      background-size: cover;
+      border-radius: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .video__thumbnail__play {
+        width: 80px;
+        height: 80px;
+        background-color: $orange;
+        border-radius: 40px;
+        box-shadow: 0px 25px 50px -12px #00000040;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        img {
+          width: 24px;
+        }
+      }
+    }
+  }
+}

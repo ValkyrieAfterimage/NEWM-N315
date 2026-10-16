@@ -1,0 +1,57 @@
+// variables
+
+$black: #111d15;
+$grey: #666666;
+$green: #1b4332;
+$orange: #e8722a;
+$yellow: #ffb900;
+$light-grey: #e7e5e4;
+$off-white: #f4f5f0;
+$white: #ffffff;
+
+$site-width: 1360px;
+
+// base
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+a {
+  font-family: "DM Sans";
+  color: $black;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Archivo";
+}
+
+h2 {
+  color: $orange;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0px;
+  margin-bottom: 48px;
+}
+
+// misc
