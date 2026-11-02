@@ -16,11 +16,11 @@ export default function yourRecipes() {
               meat. Yum!
             </p>
             <div class="desc__number">
-              <img src="src/assets/time.svg" alt="" />
+              <div class="icon time"></div>
               <p>1h 24min</p>
             </div>
             <div class="desc__number">
-              <img src="src/assets/servings.svg" alt="" />
+              <div class="icon servings"></div>
               <p>4 servings</p>
             </div>
           </div>

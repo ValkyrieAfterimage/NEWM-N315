@@ -14,11 +14,11 @@ export default function recipes() {
               meat. Yum!
             </p>
             <div class="desc__number">
-              <img src="src/assets/time.svg" alt="" />
+              <div class="icon time"></div>
               <p>1h 24min</p>
             </div>
             <div class="desc__number">
-              <img src="src/assets/servings.svg" alt="" />
+              <div class="icon servings"></div>
               <p>4 servings</p>
             </div>
           </div>
@@ -34,11 +34,11 @@ export default function recipes() {
               extra effort will be worth it.
             </p>
             <div class="desc__number">
-              <img src="src/assets/time.svg" alt="" />
+              <div class="icon time"></div>
               <p>30min</p>
             </div>
             <div class="desc__number">
-              <img src="src/assets/servings.svg" alt="" />
+              <div class="icon servings"></div>
               <p>4 servings</p>
             </div>
           </div>
@@ -53,11 +53,11 @@ export default function recipes() {
               spiced and fragrant rice.
             </p>
             <div class="desc__number">
-              <img src="src/assets/time.svg" alt="" />
+              <div class="icon time"></div>
               <p>1h 15min</p>
             </div>
             <div class="desc__number">
-              <img src="src/assets/servings.svg" alt="" />
+              <div class="icon servings"></div>
               <p>6 servings</p>
             </div>
           </div>
@@ -73,11 +73,11 @@ export default function recipes() {
               using your protein of choice!
             </p>
             <div class="desc__number">
-              <img src="src/assets/time.svg" alt="" />
+              <div class="icon time"></div>
               <p>20min</p>
             </div>
             <div class="desc__number">
-              <img src="src/assets/servings.svg" alt="" />
+              <div class="icon servings"></div>
               <p>4 servings</p>
             </div>
           </div>

@@ -109,9 +109,17 @@
         }
 
         .desc__number {
-          img {
-            width: 24px;
-            height: 24px;
+          .icon {
+            width: 25px;
+            min-height: 25px;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+          .time {
+            background-image: url("../assets/time.svg");
+          }
+          .servings {
+            background-image: url("../assets/servings.svg");
           }
 
           display: flex;
