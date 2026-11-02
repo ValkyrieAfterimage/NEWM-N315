@@ -1,0 +1,135 @@
+.recipes {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(167, 232, 189, 0.8)), url("../assets/recipes.png");
+  background-position: center;
+  background-size: cover;
+
+  button {
+    width: 120px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 26px;
+    background-color: #ffd972;
+
+    font-family: Caveat;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 10%;
+
+    box-shadow: 0px 10px 3px 0px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+
+    &:active {
+      background-color: #f0ca69;
+    }
+  }
+
+  .recipes__container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 150px 50px;
+    @media (width <= 630px) {
+      padding-bottom: 250px;
+    }
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+
+      .card__image {
+        width: 300px;
+        height: 263px;
+        border-radius: 24px;
+        box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.16);
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .card--burger {
+        background-image: url("../assets/classic-burger.png");
+      }
+      .card--pizza {
+        background-image: url("../assets/supreme-pizza.png");
+      }
+      .card--biryani {
+        background-image: url("../assets/chicken-biryani.png");
+      }
+      .card--chow-mein {
+        background-image: url("../assets/ch-chow-mein.png");
+      }
+
+      .card__desc {
+        background-color: white;
+        width: 224px;
+        height: 263px;
+        border-radius: 24px;
+        padding: 0 42px;
+        box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.16);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (width <= 630px) {
+          width: 300px;
+          height: 170px;
+          gap: 10px;
+        }
+
+        h2 {
+          font-weight: 400;
+          font-size: 15px;
+          letter-spacing: 10%;
+          border-bottom: 2px black solid;
+        }
+        p {
+          font-size: 9px;
+          letter-spacing: 10%;
+        }
+
+        .desc__number {
+          img {
+            width: 24px;
+            height: 24px;
+          }
+
+          display: flex;
+          align-items: center;
+          gap: 17px;
+        }
+      }
+
+      .card__bottom-buttons {
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
