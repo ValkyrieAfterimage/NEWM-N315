@@ -2,9 +2,9 @@
 
 Repository for my NEWM-N315 homework assignment submissions.
 
-## Most Recent Assignment: Homework seven
+## Most Recent Assignment: Homework eight
 
-https://in-info-web4.luddy.indianapolis.iu.edu/~katiej/NEWM-N315/homework-seven/
+https://in-info-web4.luddy.indianapolis.iu.edu/~katiej/NEWM-N315/homework-eight/
 
 ## Assignment archive
 
@@ -35,3 +35,7 @@ https://in-info-web4.luddy.indianapolis.iu.edu/~katiej/NEWM-N315/homework-six/
 ### Homework seven
 
 https://in-info-web4.luddy.indianapolis.iu.edu/~katiej/NEWM-N315/homework-seven/
+
+### Homework eight
+
+https://in-info-web4.luddy.indianapolis.iu.edu/~katiej/NEWM-N315/homework-eight/
